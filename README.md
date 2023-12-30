@@ -1,4 +1,4 @@
-# 🐹 Aprendendo Go / Learning Go 
+# 📘 Aprendendo Go / Learning Go 
 
 ## 📝 Sobre este Repositório / About this Repository 
 
