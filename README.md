@@ -22,12 +22,6 @@ To practice and deepen my knowledge, I am solving exercises on the Exercism plat
 
 **Exercism Go Track**: [Exercism Go](https://exercism.org/tracks/go) 
 
-## 📂 Estrutura do Repositório / Repository Structure 
-
-- `GO/`: Pasta contendo os exercícios resolvidos na Exercism. 
-/ 
-- `GO/`: Folder containing the exercises solved on Exercism. 
-
 ## 💡 Contribuições / Contributions 
 
 Se você tem sugestões ou correções, por favor, abra uma issue ou envie um pull request. 
