@@ -1,4 +1,5 @@
 package gross
+import "fmt"
 
 // Units stores the Gross Store unit measurements.
 func Units() map[string]int {
@@ -23,7 +24,7 @@ func NewBill() map[string]int {
 // AddItem adds an item to customer bill.
 func AddItem(bill, units map[string]int, item, unit string) bool {
     unit_value, unit_exists := units[unit]
-    if !unit_exists || unit_value == 0 {
+    if !unit_exists {
         return false
     }
 
@@ -33,7 +34,17 @@ func AddItem(bill, units map[string]int, item, unit string) bool {
 
 // RemoveItem removes an item from customer bill.
 func RemoveItem(bill, units map[string]int, item, unit string) bool {
-	panic("Please implement the RemoveItem() function")
+	bill_value, bill_exists := bill[item]
+	unit_value, unit_exists := units[unit]
+    
+    if !bill_exists || bill_value == 0 {
+        return false
+    }else if !unit_exists || unit_value == 0{
+        return false
+    }else{
+        fmt.Println(bill)
+        return true
+    }
 }
 
 // GetItem returns the quantity of an item that the customer has in his/her bill.
